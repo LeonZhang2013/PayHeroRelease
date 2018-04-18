@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="input_item_height">46dp</dimen>
+    <dimen name="input_item_between">10dp</dimen>
+    <dimen name="next_btn_height">60dp</dimen>
+
+    <dimen name="mini">12sp</dimen>
+    <dimen name="small">14sp</dimen>
+    <dimen name="middle">16sp</dimen>
+    <dimen name="big">18sp</dimen>
+    <dimen name="big_plus">22sp</dimen>
+    <dimen name="￥">32sp</dimen>
+</resources>

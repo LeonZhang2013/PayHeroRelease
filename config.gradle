@@ -1,0 +1,8 @@
+ext {
+    signingConfig = [
+            storeFile_debug    : file("spos-demo-common-key.jks"),
+            storePassword_debug: "99billcfsmob",
+            keyAlias_debug     : "sposDemoKey",
+            keyPassword_debug  : "99billSposDemo",
+    ]
+}

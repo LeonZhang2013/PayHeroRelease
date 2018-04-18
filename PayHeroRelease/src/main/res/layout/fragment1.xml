@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/main_black"
+        android:gravity="center"
+        android:text="扫描收银"
+        android:textColor="@color/white"
+        android:textSize="@dimen/big"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="75dp"
+        android:background="#ffffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <LinearLayout
+        android:id="@+id/amount_layout"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:background="@drawable/bottom_line"
+        android:paddingBottom="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="bottom"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/money"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"/>
+
+        <EditText
+            android:id="@+id/amount_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/￥"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/amount_dis_layout"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_line"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amount_layout">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/money_zk"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"/>
+
+        <EditText
+            android:id="@+id/amount_dis_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="bottom"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/￥"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/amount_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/amount_layout"
+        app:layout_constraintBottom_toTopOf="@id/amount_layout"
+        android:layout_marginBottom="10dp"
+        android:text="消费金额"
+        android:textSize="@dimen/small"
+        android:textColor="@color/color_black" />
+
+    <LinearLayout
+        android:id="@+id/phone_layout"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amount_dis_layout">
+
+        <EditText
+            android:id="@+id/phone_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edit_half"
+            android:hint="会员手机号"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:paddingLeft="20dp" />
+
+        <TextView
+            android:id="@+id/phone_commit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_half_right"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="确   认"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone_layout" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="60dp">
+
+        <Button
+            android:id="@+id/left_btn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/btn_half_left"
+            android:text="扫码收款"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small" />
+
+        <Button
+            android:id="@+id/right_btn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/btn_half_right"
+            android:text="二维码收款"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PayHeroRelease.iml" filepath="$PROJECT_DIR$/PayHeroRelease.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PayHeroRelease/PayHeroRelease-PayHeroRelease.iml" filepath="$PROJECT_DIR$/PayHeroRelease/PayHeroRelease-PayHeroRelease.iml" />
+    </modules>
+  </component>
+</project>

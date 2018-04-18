@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="30dp"
+        android:onClick="zhifubao"
+        android:background="@drawable/btn_hollow">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:src="@mipmap/method_zhifubao" />
+
+        <TextView
+            android:id="@+id/cp_zhifubao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textSize="@dimen/middle"
+            android:text="支付宝" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="30dp"
+        android:onClick="weixin"
+        android:background="@drawable/btn_hollow">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:src="@mipmap/method_weixin" />
+
+        <TextView
+            android:id="@+id/cp_weixin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textSize="@dimen/middle"
+            android:text="微信" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:onClick="cash"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_hollow">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:src="@mipmap/method_cash" />
+
+        <TextView
+            android:id="@+id/cp_cash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/middle"
+            android:layout_marginLeft="50dp"
+            android:text="现金" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:onClick="cart"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_hollow">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:src="@mipmap/method_card" />
+
+        <TextView
+            android:id="@+id/cp_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textSize="@dimen/middle"
+            android:text="刷卡" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

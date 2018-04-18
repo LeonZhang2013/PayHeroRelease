@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">买单英雄</string>
+
+    <string name="next">下一步</string>
+    <string name="transId">transId</string>
+    <string name="orderId">orderId</string>
+    <string name="refId">refId</string>
+    <string name="merchName">merchName</string>
+    <string name="amt">amt</string>
+    <string name="ext1">ext1</string>
+    <string name="ext2">ext2</string>
+    <string name="txnId">txnId</string>
+    <string name="transType">transType</string>
+    <string name="originalIdTxn">originalIdTxn</string>
+    <string name="versionNum">SDK版本号</string>
+    <string name="init">初始化</string>
+    <string name="updateParams">更新参数</string>
+    <string name="doPay">支付</string>
+    <string name="queryRecord">交易记录查询</string>
+    <string name="queryDetail">交易详情查询（交易状态查询）</string>
+    <string name="consumeSummary">交易汇总</string>
+    <string name="consumeSettlement">交易结算</string>
+    <string name="print">打印</string>
+    <string name="scanService">扫码服务</string>
+    <string name="cpConsume">有卡消费</string>
+    <string name="cpRefund">有卡退货</string>
+    <string name="cpVoid">有卡撤销</string>
+    <string name="scanBSC">扫码BSC</string>
+    <string name="scanCSB">扫码CSB</string>
+    <string name="scanRefund">扫码退货</string>
+    <string name="scanVoid">扫码撤销</string>
+    <string name="get_device_info">获取设备信息</string>
+    <string name="update_batch_no">更新批次号</string>
+
+    <string name="industry_card">行业卡</string>
+
+    <string name="openNC">打开非接触设备</string>
+    <string name="closeNC">关闭非接触设备</string>
+    <string name="isExistNC">是否已放置卡片（非接触设备）</string>
+    <string name="apduCommNC">APDU指令通讯（非接触设备）</string>
+    <string name="haltNC">中断下电（非接触设备）</string>
+    <string name="resetNC">上电复位（非接触设备）</string>
+    <string name="getCardCodeNC">获取卡片内码（非接触设备）</string>
+    <string name="getCardTypeNC">读取卡类型（非接触设备）</string>
+    <string name="authNC">认证（非接触设备）</string>
+    <string name="readBlockNC">读数据（非接触设备）</string>
+    <string name="writeBlockNC">写数据（非接触设备）</string>
+    <string name="addValueNC">加值（非接触设备）</string>
+    <string name="reduceValueNC">减值（非接触设备）</string>
+
+
+    <string name="paymentLabel">paymentLabel</string>
+    <string name="startTime">startTime</string>
+    <string name="endTime">endTime</string>
+    <string name="pageIndex">pageIndex</string>
+    <string name="pageSize">pageSize</string>
+    <string name="payType">payType</string>
+    <string name="payTypeText">可选类型(可长按复制粘贴): 99BILLCSB , WECHATCSB , ALIPAYCSB, CUPCSB</string>
+    <string name="two_switch_one">传入参数二选一</string>
+    <string name="transType_text">1有卡，2扫码</string>
+    <string name="txnId_hint">可不传,若传必与refId一起传</string>
+</resources>

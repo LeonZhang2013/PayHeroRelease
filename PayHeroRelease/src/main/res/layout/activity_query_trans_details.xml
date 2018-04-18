@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="callback"
+            type="com.smartpos.payhero.NextClickCallback" />
+
+        <variable
+            name="mock"
+            type="com.smartpos.payhero.MockData" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--transId-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_item_height"
+                android:layout_marginTop="@dimen/input_item_between"
+                android:orientation="horizontal"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp">
+
+                <TextView
+                    style="@style/input_item_label_style"
+                    android:text="@string/transId" />
+
+                <EditText
+                    style="@style/input_item_value_style"
+                    android:hint="@string/two_switch_one"
+                    android:inputType="number"
+                    android:text="@={mock.transId}" />
+            </LinearLayout>
+
+            <!--refId-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_item_height"
+                android:layout_marginTop="@dimen/input_item_between"
+                android:orientation="horizontal"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp">
+
+                <TextView
+                    style="@style/input_item_label_style"
+                    android:text="@string/refId" />
+
+                <EditText
+                    style="@style/input_item_value_style"
+                    android:hint="@string/two_switch_one"
+                    android:inputType="number"
+                    android:text="@={mock.refId}" />
+            </LinearLayout>
+
+            <!--idTxn-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_item_height"
+                android:layout_marginTop="@dimen/input_item_between"
+                android:orientation="horizontal"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp">
+
+                <TextView
+                    style="@style/input_item_label_style"
+                    android:text="@string/txnId" />
+
+                <EditText
+                    style="@style/input_item_value_style"
+                    android:hint="@string/txnId_hint"
+                    android:inputType="number"
+                    android:text="@={mock.txnId}" />
+            </LinearLayout>
+
+            <!--orderType-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_item_height"
+                android:layout_marginTop="@dimen/input_item_between"
+                android:orientation="horizontal"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp">
+
+                <TextView
+                    style="@style/input_item_label_style"
+                    android:text="@string/transType" />
+
+                <EditText
+                    style="@style/input_item_amt_style"
+                    android:text="@={mock.transType}" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_item_height"
+                android:layout_marginTop="@dimen/input_item_between"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:text="@string/transType_text"
+                android:textIsSelectable="true" />
+
+            <!--下一步-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/next_btn_height"
+                android:layout_marginBottom="36dp"
+                android:layout_marginTop="36dp"
+                android:onClick="@{()->callback.onNextClick()}"
+                android:text="@string/next"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</layout>

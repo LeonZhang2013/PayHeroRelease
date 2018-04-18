@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorPrimaryDark">@color/main_black</item>
+        <item name="colorAccent">@color/main_color</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="order_info">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">45dp</item>
+    </style>
+
+    <style name="tab_menu_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:textSize">@dimen/small</item>
+    </style>
+
+    <style name="input_item_label_style">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="input_item_value_style">
+        <item name="android:layout_weight">2</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="input_item_original_id_txn_style">
+        <item name="android:layout_weight">2</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="input_item_amt_style">
+        <item name="android:layout_weight">2</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">12</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="input_item_merch_name_style">
+        <item name="android:layout_weight">2</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:maxLength">31</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+</resources>
